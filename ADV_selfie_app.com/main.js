@@ -18,9 +18,9 @@ var Content = event.results[0][0].transcript;
 
     Textbox.innerHTML = Content;
     console.log(Content);
-      if(Content =="take my selfie")
+      if(Content =="tire minha selfie")
       {
-        console.log("taking selfie --- ");
+        console.log("tirando selfie --- ");
         speak();
       }
 }
@@ -29,7 +29,7 @@ var Content = event.results[0][0].transcript;
 function speak(){
     var synth = window.speechSynthesis;
 
-    speak_data = "Taking you Selfie in 5 seconds";
+    speak_data = "Tirando sua selfie em 5 segundos";
 
     var utterThis = new SpeechSynthesisUtterance(speak_data);
 
